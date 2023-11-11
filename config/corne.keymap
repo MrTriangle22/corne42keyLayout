@@ -37,9 +37,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp F1           &kp F2             &kp F3        &kp F4           &kp F5          &kp F6            &kp F7            &kp F8          &kp F9             &kp F10  &kp ESC
-&kp LCTRL  &bt BT_SEL 0     &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &kp LEFT          &kp DOWN          &kp UP          &kp RIGHT          &kp F11  &kp RCTRL
-&kp LSHFT  &rgb_ug RGB_TOG  &kp C_VOLUME_DOWN  &bl BL_TOG    &kp C_VOLUME_UP  &bt BT_CLR      &mwh SCROLL_LEFT  &mwh SCROLL_DOWN  &mwh SCROLL_UP  &mwh SCROLL_RIGHT  &kp F12  &kp RIGHT_SHIFT
+&kp TAB    &trans           &trans             &trans        &trans           &trans          &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP    &mmv MOVE_RIGHT    &mkp LCLK  &kp ESC
+&kp LCTRL  &bt BT_SEL 0     &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &kp LEFT          &kp DOWN          &kp UP          &kp RIGHT          &mkp RCLK  &kp RCTRL
+&kp LSHFT  &rgb_ug RGB_TOG  &kp C_VOLUME_DOWN  &bl BL_TOG    &kp C_VOLUME_UP  &bt BT_CLR      &mwh SCROLL_LEFT  &mwh SCROLL_DOWN  &mwh SCROLL_UP  &mwh SCROLL_RIGHT  &trans     &kp RIGHT_SHIFT
                                                &kp LGUI      &sl 0            &kp SPACE       &kp RET           &sl 2             &kp RALT
             >;
         };
@@ -52,10 +52,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB         &trans          &kp N1  &kp N2           &kp N3           &trans       &trans     &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp KP_RPAR  &trans     &kp BSPC
-&kp LCTRL       &kp KP_NUMLOCK  &kp N4  &kp N5           &kp N6           &trans       &kp MINUS  &kp EQUAL     &kp LBKT              &kp RBKT     &kp GRAVE  &kp RCTRL
-&sk LEFT_SHIFT  &trans          &kp N7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp N0       &trans     &kp BSLH      &kp LBRC              &kp RBRC     &kp FSLH   &kp RSHIFT
-                                        &kp LGUI         &sl 0            &kp SPACE    &kp RET    &sl 1         &kp RALT
+&kp TAB         &trans          &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp F12       &trans     &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp KP_RPAR  &trans     &kp BSPC
+&kp LCTRL       &kp KP_NUMLOCK  &mt F4 NUMBER_4  &mt F5 N5        &mt F6 NUMBER_6  &kp F11       &kp MINUS  &kp EQUAL     &kp LBKT              &kp RBKT     &kp GRAVE  &kp RCTRL
+&sk LEFT_SHIFT  &trans          &mt F7 N7        &mt F8 N8        &mt F9 N9        &mt F10 N0    &trans     &kp BSLH      &kp LBRC              &kp RBRC     &kp FSLH   &kp RSHIFT
+                                                 &kp LGUI         &sl 0            &kp SPACE     &kp RET    &sl 1         &kp RALT
             >;
         };
     };

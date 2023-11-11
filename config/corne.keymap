@@ -64,7 +64,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans       &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp KP_NLCK  &kp KP_NUMBER_4     &kp KP_NUMBER_5     &kp KP_NUMBER_6     &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans       &kp KP_NUMBER_7     &kp KP_NUMBER_8     &kp KP_NUMBER_9     &kp KP_NUMBER_0  &trans
-                        &trans  &trans  &trans    &trans       &trans              &trans
+                        &trans  &to 0   &trans    &trans       &trans              &trans
             >;
 
             label = "numpad";

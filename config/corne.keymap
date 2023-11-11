@@ -54,7 +54,7 @@
             bindings = <
 &kp TAB         &trans          &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3     &kp F12          &trans     &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp KP_RPAR  &trans     &kp BSPC
 &kp LCTRL       &kp KP_NUMLOCK  &mt F4 NUMBER_4  &mt F5 N5        &mt F6 NUMBER_6     &kp F11          &kp MINUS  &kp EQUAL     &kp LBKT              &kp RBKT     &kp GRAVE  &kp RCTRL
-&sk LEFT_SHIFT  &trans          &mt F7 N7        &mt F8 N8        &mt F9 KP_NUMBER_9  &mt F10 KP_N0    &trans     &kp BSLH      &kp LBRC              &kp RBRC     &kp FSLH   &kp RSHIFT
+&sk LEFT_SHIFT  &to 3           &mt F7 N7        &mt F8 N8        &mt F9 KP_NUMBER_9  &mt F10 KP_N0    &trans     &kp BSLH      &kp LBRC              &kp RBRC     &kp FSLH   &kp RSHIFT
                                                  &kp LGUI         &sl 0               &kp SPACE        &kp RET    &sl 1         &kp RALT
             >;
         };

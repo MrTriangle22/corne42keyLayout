@@ -58,5 +58,16 @@
                                                  &kp LGUI         &sl 0               &kp SPACE        &kp RET    &sl 1         &kp RALT
             >;
         };
+
+        numpad {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans
+                        &trans  &trans  &trans    &trans  &trans           &trans
+            >;
+
+            label = "numpad";
+        };
     };
 };

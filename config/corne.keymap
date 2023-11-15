@@ -46,10 +46,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &trans  &trans  &trans    &trans  &trans       &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP    &mmv MOVE_RIGHT    &mkp LCLK  &kp DELETE
-&kp LCTRL  &trans  &trans  &trans    &trans  &trans       &kp LEFT          &kp DOWN          &kp UP          &kp RIGHT          &mkp MCLK  &kp RCTRL
-&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &mwh SCROLL_LEFT  &mwh SCROLL_DOWN  &mwh SCROLL_UP  &mwh SCROLL_RIGHT  &mkp RCLK  &kp RIGHT_SHIFT
-                           &kp LGUI  &sl 0   &kp SPACE    &kp RET           &sl 2             &kp RALT
+&kp TAB    &trans  &trans  &trans    &trans  &trans       &trans    &trans     &kp SPACE  &kp SPACE  &kp SPACE  &kp DELETE
+&kp LCTRL  &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp SPACE  &kp RCTRL
+&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &kp BSPC  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp RIGHT_SHIFT
+                           &kp LGUI  &sl 0   &kp SPACE    &kp RET   &sl 2      &kp RALT
             >;
         };
 

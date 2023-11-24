@@ -50,9 +50,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &trans           &trans  &trans    &trans  &trans       &trans    &trans     &kp SPACE  &kp SPACE  &kp SPACE  &kp DELETE
+&kp TAB    &rgb_ug RGB_BRI  &trans  &trans    &trans  &trans       &trans    &trans     &kp SPACE  &kp SPACE  &kp SPACE  &kp DELETE
 &kp LCTRL  &rgb_ug RGB_EFF  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp SPACE  &kp RCTRL
-&kp LSHFT  &trans           &trans  &trans    &trans  &trans       &kp BSPC  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp RIGHT_SHIFT
+&kp LSHFT  &rgb_ug RGB_BRD  &trans  &trans    &trans  &trans       &kp BSPC  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp RIGHT_SHIFT
                                     &kp LGUI  &to 0   &kp SPACE    &kp RET   &to 2      &kp RALT
             >;
         };

@@ -9,9 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&led_strip {
-    chain-length = <27>;
-};
+&led_strip { chain-length = <27>; };
 
 / {
     combos {
@@ -21,9 +19,6 @@
             bindings = <&to 3>;
             key-positions = <37 40>;
         };
-    };
-
-    macros {
     };
 
     keymap {
@@ -37,9 +32,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Z    &kp U  &kp I         &kp O    &kp P     &kp BSPC
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I         &kp O    &kp P     &kp BSPC
 &kp LSHFT  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K         &kp L    &kp SEMI  &kp RSHFT
-&kp LCTRL  &kp Y  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp RCTRL
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp RCTRL
                          &kp LGUI  &to 1  &kp SPACE    &kp RET  &to 2  &kp LEFT_ALT
             >;
         };
@@ -52,10 +47,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &trans  &trans  &trans    &trans  &trans       &kp BSPC  &trans    &trans        &trans     &trans  &kp DELETE
-&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &trans  &kp RSHFT
-&kp LCTRL  &trans  &trans  &trans    &trans  &trans       &trans    &trans    &trans        &trans     &trans  &kp RCTRL
-                           &kp LGUI  &to 0   &kp SPACE    &kp RET   &to 2     &kp LEFT_ALT
+&kp ESC    &trans  &trans  &trans    &trans  &trans       &kp BSPC  &trans    &trans    &trans     &trans  &kp DELETE
+&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &kp RSHFT
+&kp LCTRL  &trans  &trans  &trans    &trans  &trans       &trans    &trans    &trans    &trans     &trans  &kp RCTRL
+                           &kp LALT  &to 0   &kp SPACE    &kp RET   &to 2     &kp LGUI
             >;
         };
 

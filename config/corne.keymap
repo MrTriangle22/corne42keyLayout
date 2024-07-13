@@ -21,6 +21,18 @@
         };
     };
 
+    behaviors {
+        moto: moto {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOTO";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

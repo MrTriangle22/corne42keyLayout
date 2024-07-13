@@ -33,7 +33,6 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
         };
-    };
 
         caps: caps {
             compatible = "zmk,behavior-tap-dance";

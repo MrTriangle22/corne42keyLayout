@@ -59,10 +59,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC    &trans  &trans  &trans    &trans  &trans       &kp BSPC  &trans    &trans    &trans     &trans  &kp DELETE
-&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &kp RSHFT
-&kp LCTRL  &trans  &trans  &trans    &trans  &trans       &trans    &trans    &trans    &trans     &trans  &kp RCTRL
-                           &kp LALT  &to 0   &kp SPACE    &kp RET   &to 2     &kp LGUI
+&kp ESC    &trans  &trans  &trans    &trans  &trans       &kp BSPC  &trans     &trans    &trans     &trans  &kp DELETE
+&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &trans  &kp RSHFT
+&kp LCTRL  &trans  &trans  &trans    &trans  &trans       &trans    &moto 1 1  &trans    &trans     &trans  &kp RCTRL
+                           &kp LALT  &to 0   &kp SPACE    &kp RET   &to 2      &kp LGUI
             >;
         };
 

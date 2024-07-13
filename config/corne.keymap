@@ -76,9 +76,9 @@
 
         MouseNormal {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans            &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP  &mmv MOVE_RIGHT  &to 1   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &msc SCROLL_DOWN  &msc MOVE_UP  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans            &trans         &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP   &mmv MOVE_RIGHT  &to 1   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &msc SCROLL_DOWN  &msc SCROLL_UP &trans           &trans  &trans
                         &trans  &trans  &trans    &trans          &trans            &trans
             >;
         };

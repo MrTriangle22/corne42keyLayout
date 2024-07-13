@@ -50,7 +50,7 @@
 
             bindings = <
 &kp ESC    &trans  &trans  &trans    &trans  &trans       &kp BSPC  &trans    &trans    &trans     &trans  &kp DELETE
-&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &to 4   &kp RSHFT
+&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &mo 4   &kp RSHFT
 &kp LCTRL  &trans  &trans  &trans    &trans  &trans       &trans    &trans    &trans    &trans     &trans  &kp RCTRL
                            &kp LALT  &to 0   &kp SPACE    &kp RET   &to 2     &kp LGUI
             >;
@@ -76,10 +76,10 @@
 
         MouseNormal {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans            &trans         &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP   &mmv MOVE_RIGHT  &to 1   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &msc SCROLL_DOWN  &msc SCROLL_UP &trans           &trans  &trans
-                        &trans  &trans  &trans    &mkp MB1        &mkp MB2          &mkp MB3
+&trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans            &trans         &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &mmv MOVE_DOWN    &mmv MOVE_UP   &mmv MOVE_RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCROLL_LEFT &msc SCROLL_DOWN  &msc SCROLL_UP &msc SCROLL_DOWN &trans  &trans
+                        &trans  &trans  &trans    &mkp MB1         &mkp MB3          &mkp MB2
             >;
         };
     };

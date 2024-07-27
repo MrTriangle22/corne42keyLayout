@@ -11,6 +11,8 @@
 #include <dt-bindings/zmk/mouse.h>
 #include "mouse.dtsi"
 
+#define NONE 0
+
 #define MO_TOG(layer) &mo_tog layer layer   // Macro to apply momentary-layer-on-hold/toggle-layer-on-tap to a specific layer
 
 &led_strip { chain-length = <27>; };

@@ -46,7 +46,7 @@
 &kp TAB         &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y    &kp U      &kp I         &kp O    &kp P     &kp BSPC
 &mt LSHIFT ESC  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H    &kp J      &kp K         &kp L    &kp SEMI  &kp RSHFT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N    &kp M      &kp COMMA     &kp DOT  &kp FSLH  &kp RCTRL
-                              &kp LGUI  MO_TOG(1) &kp SPACE    &kp RET  MO_TOG(2)  &kp LEFT_ALT
+                              &kp LGUI  &mo_tog 1 1 &kp SPACE    &kp RET  &mo_tog 2 2  &kp LEFT_ALT
             >;
         };
 
@@ -55,7 +55,7 @@
 &kp ESC         &trans  &trans  &trans    &trans     &trans       &kp BSPC  &trans     &trans    &trans     &trans  &kp DELETE
 &mt LSHIFT ESC  &trans  &trans  &trans    &trans     &trans       &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &mo 4   &kp RSHFT
 &kp LCTRL       &trans  &trans  &trans    &trans     &trans       &trans    &trans     &trans    &trans     &trans  &kp RCTRL
-                                &kp LALT  MO_TOG(0)  &kp SPACE    &kp RET   MO_TOG(2)  &kp LGUI
+                                &kp LALT  &mo_tog 0 0  &kp SPACE    &kp RET   &mo_tog 2 2  &kp LGUI
             >;
         };
 
@@ -64,7 +64,7 @@
 &kp TAB         &kp EXCLAMATION    &kp AT_SIGN  &kp HASH                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp BSPC          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL        &kp ESCAPE
 &mt LSHIFT ESC  &mt DOLLAR DOLLAR  &kp PERCENT  &mt CARET CARET             &kp LBKT              &kp RBKT                 &kp KP_NUMLOCK    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS        &kp ASTERISK
 &kp LCTRL       &kp AMPERSAND      &kp GRAVE    &mt NON_US_BACKSLASH SLASH  &trans                &trans                   &mt COMMA PERIOD  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &kp SQT
-                                                &kp LGUI                    MO_TOG(0)             &kp SPACE                &kp ENTER         MO_TOG(1)        &kp LEFT_ALT
+                                                &kp LGUI                    &mo_tog 0 0             &kp SPACE                &kp ENTER         &mo_tog 2 2        &kp LEFT_ALT
             >;
         };
 
@@ -73,7 +73,7 @@
 &kp TAB         &rgb_ug RGB_EFF  &kp C_VOL_DN    &kp C_MUTE        &kp C_VOL_UP  &rgb_ug RGB_BRI    &trans  &kp F7     &kp F8    &kp F9  &kp F12  &kp ESC
 &mt LSHIFT ESC  &bt BT_CLR       &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &rgb_ug RGB_BRD    &trans  &kp F4     &kp F5    &kp F6  &kp F11  &trans
 &kp LCTRL       &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4       &trans  &kp F1     &kp F2    &kp F3  &kp F10  &trans
-                                                 &kp LGUI          MO_TOG(0)     &trans             &trans  MO_TOG(2)  &kp LALT
+                                                 &kp LGUI          &mo_tog 0 0     &trans             &trans  &mo_tog 2 2  &kp LALT
             >;
         };
 

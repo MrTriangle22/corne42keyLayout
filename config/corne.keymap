@@ -34,13 +34,6 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
         };
-
-        caps: caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CAPS";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-        };
     };
 
     keymap {

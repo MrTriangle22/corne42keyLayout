@@ -46,7 +46,7 @@
 &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp N4           &kp N5  &kp N6       &kp N7    &kp N8    &kp N9            &kp N0     &kp MINUS  &kp EQUAL
 &kp LSHIFT    &kp GRAVE     &trans  &trans           &trans  &trans       &kp LEFT  &kp DOWN  &kp UP            &kp RIGHT  &kp APOS   &kp LEFT_SHIFT
 &kp LCTRL     &trans        &trans  &trans           &trans  &trans       &trans    &trans    &kp LBKT          &kp RBKT   &kp BSLH   &kp RCTRL
-                                    &mt LGUI DELETE  &to 2   &kp SPACE    &kp RET   &to 0     &mt LEFT_ALT ESC
+                                    &mt LGUI DELETE  &to 0   &kp SPACE    &kp RET   &to 2      &mt LEFT_ALT ESC
             >;
         };
 

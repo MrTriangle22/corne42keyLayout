@@ -1,15 +1,17 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mmv {
-  acceleration-exponent = <1>;      // 1
-  time-to-max-speed-ms = <1700>;    // 40
-  delay-ms = <0>;                   // 0
+    x-input-code = <INPUT_REL_X>;
+    y-input-code = <INPUT_REL_Y>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <1>;
 };
 
 &msc {
-  acceleration-exponent = <1>;      // 0
-  time-to-max-speed-ms = <2000>;    // 40
-  delay-ms = <0>;                   // 10
+    x-input-code = <INPUT_REL_HWHEEL>;
+    y-input-code = <INPUT_REL_WHEEL>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <0>;
 };
 
 #define U_MOUSE_MOVE_MAX 2000       // 600

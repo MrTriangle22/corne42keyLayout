@@ -53,8 +53,8 @@
         mouse_normal {
             bindings = <
 &trans  &trans  &trans  &trans           &trans  &trans      &trans             &trans             &trans            &trans            &trans  &trans
-&mo 3   &trans  &trans  &trans           &trans  &trans      &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)  &trans  &trans
-&mo 4   &trans  &trans  &trans           &trans  &trans      &msc MOVE_X(-10)   &msc MOVE_Y(-10)   &msc MOVE_Y(10)   &msc MOVE_Y(10)   &trans  &trans
+&mo 3   &trans  &trans  &trans           &trans  &trans      &mmv MOVE_X(-200)  &mmv MOVE_Y(200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &trans  &trans
+&mo 4   &trans  &trans  &trans           &trans  &trans      &msc MOVE_X(-10)   &msc MOVE_Y(10)   &msc MOVE_Y(-10)   &msc MOVE_Y(10)   &trans  &trans
                         &mt LGUI DELETE  &to 1   &mkp MB1    &mkp MB1           &to 0              &mkp MB2
             >;
         };
@@ -62,8 +62,8 @@
         mouse_precise {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans             &trans             &trans            &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-100)  &mmv MOVE_Y(-100)  &mmv MOVE_Y(100)  &mmv MOVE_X(100)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &msc MOVE_X(-5)    &msc MOVE_Y(-5)    &msc MOVE_Y(5)    &msc MOVE_Y(5)    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-100)  &mmv MOVE_Y(100)  &mmv MOVE_Y(-100)  &mmv MOVE_X(100)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc MOVE_X(-5)    &msc MOVE_Y(5)    &msc MOVE_Y(-5)    &msc MOVE_Y(5)    &trans  &trans
                         &trans  &trans  &trans    &trans             &trans             &trans
             >;
         };
@@ -71,8 +71,8 @@
         mouse_fast {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans             &trans             &trans            &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-400)  &mmv MOVE_Y(-400)  &mmv MOVE_Y(400)  &mmv MOVE_X(400)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &msc MOVE_X(-20)   &msc MOVE_Y(-10)   &msc MOVE_Y(20)   &msc MOVE_Y(20)   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-400)  &mmv MOVE_Y(400)  &mmv MOVE_Y(-400)  &mmv MOVE_X(400)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc MOVE_X(-20)   &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_Y(20)   &trans  &trans
                         &trans  &trans  &trans    &trans             &trans             &trans
             >;
         };

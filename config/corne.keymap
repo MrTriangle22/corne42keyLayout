@@ -42,7 +42,7 @@
 
         Alternative {
             bindings = <
-&trans      &trans   &kp LC(RIGHT)  &trans               &trans       &trans                &trans         &trans    &kp C_AC_HOME        &trans     &kp PAGE_UP  &trans
+&trans      &trans   &kp LC(RIGHT)  &trans               &trans       &trans                &trans         &trans    &kp HOME             &trans     &kp PAGE_UP  &trans
 &kp LSHIFT  &kp END  &trans         &trans               &trans       &trans                &kp LEFT       &kp DOWN  &kp UP               &kp RIGHT  &trans       &kp LEFT_SHIFT
 &kp LCTRL   &trans   &trans         &kp K_COPY           &kp K_PASTE  &kp LC(LEFT_ARROW)    &kp PAGE_DOWN  &trans    &trans               &trans     &trans       &kp RCTRL
                                     &mt LEFT_ALT ESCAPE  &to 2        &kp SPACE             &kp RET        &to 0     &mt LEFT_WIN DELETE

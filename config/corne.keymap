@@ -26,6 +26,18 @@
             bindings = <&to 3>;
             key-positions = <37 40>;
         };
+
+        ToLayer2 {
+            bindings = <&to 2>;
+            key-positions = <37 12>;
+            layers = <0>;
+        };
+
+        ToLayer0 {
+            bindings = <&to 0>;
+            key-positions = <37 12>;
+            layers = <1 2>;
+        };
     };
 
     keymap {
@@ -44,7 +56,7 @@
             bindings = <
 &trans      &trans   &kp LC(RIGHT)  &trans               &trans       &trans                &trans         &trans    &kp HOME             &trans     &kp PAGE_UP  &trans
 &kp LSHIFT  &kp END  &trans         &trans               &trans       &trans                &kp LEFT       &kp DOWN  &kp UP               &kp RIGHT  &trans       &kp LEFT_SHIFT
-&kp LCTRL   &trans   &trans         &kp K_COPY           &kp K_PASTE  &kp LC(LEFT_ARROW)    &kp PAGE_DOWN  &trans    &trans               &trans     &trans       &kp RCTRL
+&kp LCTRL   &to 4    &trans         &kp K_COPY           &kp K_PASTE  &kp LC(LEFT_ARROW)    &kp PAGE_DOWN  &trans    &trans               &trans     &trans       &kp RCTRL
                                     &mt LEFT_ALT ESCAPE  &to 2        &kp SPACE             &kp RET        &to 0     &mt LEFT_WIN DELETE
             >;
         };
@@ -54,7 +66,7 @@
 &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp N4           &kp N5  &kp N6       &kp N7   &kp N8  &kp N9            &kp N0    &kp MINUS  &kp EQUAL
 &kp LSHIFT    &kp GRAVE     &trans  &trans           &trans  &trans       &trans   &trans  &trans            &trans    &kp APOS   &kp LEFT_SHIFT
 &kp LCTRL     &trans        &trans  &trans           &trans  &trans       &trans   &trans  &kp LBKT          &kp RBKT  &kp BSLH   &kp RCTRL
-                                    &mt LGUI DELETE  &sl 1   &kp SPACE    &kp RET  &to 0   &mt LEFT_ALT ESC
+                                    &mt LGUI DELETE  &to 1   &kp SPACE    &kp RET  &to 0   &mt LEFT_ALT ESC
             >;
         };
 
@@ -72,7 +84,7 @@
 &kp ESC  &kp T      &kp Q  &kp W   &kp E  &kp R        &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB  &kp LSHFT  &kp A  &kp S   &kp D  &kp F        &trans  &trans  &trans  &trans  &trans  &trans
 &kp I    &kp LCTRL  &kp Z  &kp X   &kp C  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &mo 5  &kp SPACE    &trans  &trans  &trans
+                           &trans  &mo 5  &kp SPACE    &trans  &to 0   &trans
             >;
         };
 

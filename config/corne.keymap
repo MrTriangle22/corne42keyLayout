@@ -66,5 +66,23 @@
                                            &mt LGUI DELETE  &to 2            &trans             &trans          &to 0              &kp LALT
             >;
         };
+
+        GamingLayer1 {
+            bindings = <
+&kp ESC  &kp T      &kp Q  &kp W   &kp E  &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp LSHFT  &kp A  &kp S   &kp D  &kp F        &trans  &trans  &trans  &trans  &trans  &trans
+&kp I    &kp LCTRL  &kp Z  &kp X   &kp C  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &mo 5  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        GamingLayer2 {
+            bindings = <
+&trans  &kp N6  &kp N7  &trans  &kp N8  &kp N9    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 };

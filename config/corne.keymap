@@ -15,11 +15,23 @@
 
 #define NONE 0
 
-#define MO_TOG(layer) &mo_tog layer layer   // Macro to apply momentary-layer-on-hold/toggle-layer-on-tap to a specific layer
-
 &led_strip { chain-length = <27>; };
 
 / {
+
+    // --- mouse movement speed scaling ---
+    &mmv_input_listener {
+        input-processors = <&zip_xy_scaler>;
+    };
+
+    &zip_xy_scaler {
+        compatible = "zmk,input-processor-xy-scaler";
+        mod-scalers = <
+            (MOD_LSFT|MOD_RSFT) 1 2   // Shift = half speed
+            (MOD_LCTL|MOD_RCTL) 2 1   // Ctrl = double speed
+        >;
+    };
+
     combos {
         compatible = "zmk,combos";
 

@@ -6,3 +6,5 @@ dont forget to add
 
 Change pipe and ?
 Add tap dance 
+
+# POWERCYCLE OF 10 SECONDS

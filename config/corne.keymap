@@ -15,10 +15,30 @@
 #include <dt-bindings/zmk/mouse.h>
 #include "mouse.dtsi"
 
+// for input scalar
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 #define NONE 0
 
 &led_strip { chain-length = <27>; };
+
+&mmv_input_listener {
+    input-processors = <&zip_xy_scaler 1 2>;
+
+    fast {
+        layers = <7>;
+        input-processors = <&zip_xy_scaler 2 1>;
+    };
+    slow {
+        layers = <8>;
+        input-processors = <&zip_xy_scaler 1 2>;
+    };
+    scroller {
+        layers = <9>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
+};
 
 / {
     combos {
@@ -111,6 +131,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans             &trans            &trans             &trans            &trans  &trans
                         &trans  &to 0   &trans    &mkp MB1           &mkp MB3          &mkp MB2
             >;
+        };
+        Fast {
+            bindings = <>;
+        };
+        Slow {
+            bindings = <>;
+        };
+        Scroll {
+            bindings = <>;
         };
     };
 };

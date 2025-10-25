@@ -25,7 +25,6 @@
 &led_strip { chain-length = <27>; };
 
 &mmv_input_listener {
-    input-processors = <&zip_xy_scaler 1 2>;
 
     fast {
         layers = <7>;

@@ -49,5 +49,5 @@
 };
 
 &mmv_input_listener {
-    input-processors = <&zip_xy_scaler>;
+    input-processors = <&{/input_processors/zip_xy_scaler}>;
 };

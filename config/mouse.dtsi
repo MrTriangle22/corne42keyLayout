@@ -49,5 +49,17 @@
 };
 
 &mmv_input_listener {
-    input-processors = <&{/input_processors/zip_xy_scaler}>;
+    input-processors = <&zip_xy_scaler>;
+};
+
+/ {
+    input_processors {
+        zip_xy_scaler: zip_xy_scaler {
+            compatible = "zmk,input-processor-xy-scaler";
+            mod-scalers = <
+                (MOD_LSFT|MOD_RSFT) 1 2   // Shift = half speed
+                (MOD_LCTL|MOD_RCTL) 2 1   // Ctrl = double speed
+            >;
+        };
+    };
 };

@@ -19,21 +19,6 @@
 &led_strip { chain-length = <27>; };
 
 / {
-
-    // --- mouse movement speed scaling ---
-    zip_xy_scaler: zip_xy_scaler {
-        compatible = "zmk,input-processor-xy-scaler";
-        mod-scalers = <
-            (MOD_LSFT|MOD_RSFT) 1 2   // Shift = half speed
-            (MOD_LCTL|MOD_RCTL) 2 1   // Ctrl = double speed
-        >;
-    };
-
-    mmv_input_listener: mmv_input_listener {
-        compatible = "zmk,input-listener-mouse-move";
-        input-processors = <&zip_xy_scaler>;
-    };
-
     combos {
         compatible = "zmk,combos";
 

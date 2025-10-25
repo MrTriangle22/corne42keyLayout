@@ -37,7 +37,7 @@
 
     scrollerInvert {
         layers = <9>;
-        input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>;
+        input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
         process-next;
     };
 

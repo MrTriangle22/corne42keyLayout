@@ -51,20 +51,3 @@
     time-to-max-speed-ms = <300>;
     acceleration-exponent = <0>;
 };
-
-/ {
-    input_processors {
-        mouse_speed_scaler: zip_xy_scaler {
-            compatible = "zmk,input-processor-xy-scaler";
-            #input-processor-cells = <0>;
-            mod-scalers = <
-                (MOD_LSFT|MOD_RSFT) 1 2   // Shift = half speed
-                (MOD_LCTL|MOD_RCTL) 2 1   // Ctrl = double speed
-            >;
-        };
-    };
-};
-
-&mmv_input_listener {
-    input-processors = <&mouse_speed_scaler>;
-};

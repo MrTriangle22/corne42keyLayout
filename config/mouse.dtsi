@@ -48,7 +48,6 @@
     acceleration-exponent = <0>;
 };
 
-&mmv_input_listener: mmv_input_listener {
-    compatible = "zmk,input-listener-mouse-move";
+&mmv_input_listener {
     input-processors = <&zip_xy_scaler>;
 };

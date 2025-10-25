@@ -52,10 +52,6 @@
     acceleration-exponent = <0>;
 };
 
-&mmv_input_listener {
-    input-processors = <&zip_xy_scaler>;
-};
-
 / {
     input_processors {
         zip_xy_scaler: zip_xy_scaler {
@@ -66,4 +62,8 @@
             >;
         };
     };
+};
+
+&mmv_input_listener {
+    input-processors = <&zip_xy_scaler>;
 };

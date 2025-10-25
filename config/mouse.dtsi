@@ -54,7 +54,7 @@
 
 / {
     input_processors {
-        zip_xy_scaler: zip_xy_scaler {
+        mouse_speed_scaler: zip_xy_scaler {
             compatible = "zmk,input-processor-xy-scaler";
             mod-scalers = <
                 (MOD_LSFT|MOD_RSFT) 1 2   // Shift = half speed
@@ -65,5 +65,5 @@
 };
 
 &mmv_input_listener {
-    input-processors = <&zip_xy_scaler>;
+    input-processors = <&mouse_speed_scaler>;
 };

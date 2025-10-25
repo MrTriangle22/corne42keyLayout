@@ -52,6 +52,10 @@
     acceleration-exponent = <0>;
 };
 
+&mmv_input_listener {
+    input-processors = <&zip_xy_scaler>;
+};
+
 / {
     input_processors {
         zip_xy_scaler: zip_xy_scaler {
@@ -61,8 +65,5 @@
                 (MOD_LCTL|MOD_RCTL) 2 1   // Ctrl = double speed
             >;
         };
-    };
-    &mmv_input_listener {
-        input-processors = <&zip_xy_scaler>;
     };
 };

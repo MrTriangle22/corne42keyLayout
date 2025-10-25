@@ -15,9 +15,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include "mouse.dtsi"
 
-// for input scalar
-#include <input/processors.dtsi>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 #define NONE 0
 

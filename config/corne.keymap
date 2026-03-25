@@ -22,7 +22,23 @@
 
 #define NONE 0
 
-&led_strip { chain-length = <27>; };
+/ {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
+
+    /* * If 'led_strip' is still undefined, we use the absolute path 
+     * to the WS2812 node on the nice_nano's SPI3 bus.
+     */
+    aliases {
+        led-strip = &{/soc/spi@40023000/ws2812@0};
+    };
+};
+
+/* Configure the chain length here */
+&{/soc/spi@40023000/ws2812@0} {
+    chain-length = <27>; /* 6 underglow + 21 per-key for Corne v3 */
+};
 
 &mmv_input_listener {
     fast {

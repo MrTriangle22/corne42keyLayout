@@ -52,7 +52,7 @@
     combos {
         compatible = "zmk,combos";
 
-        toSettings {
+        toFunkKeys {
             bindings = <&to 3>;
             key-positions = <37 40>;
         };
